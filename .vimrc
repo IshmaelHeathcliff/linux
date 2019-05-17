@@ -9,6 +9,15 @@ set term=xterm
 set t_Co=256
 colorscheme solarized
 
+if $COLORTERM == 'truecolor'
+    set termguicolors
+    colorscheme s
+else
+    set term=xterm
+    set t_Co=256
+    colorscheme solarized
+endif
+
 "背景色
 set background=dark
 
