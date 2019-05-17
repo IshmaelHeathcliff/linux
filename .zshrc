@@ -123,8 +123,6 @@ ex ()
 # Example aliases
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="cd ~/.oh-my-zsh"
-alias dropbox="cd /mnt/c/Users/Ishma/Dropbox"
-alias ~~="cd /mnt/c/Users/Ishma"
 alias vimconfig="vim ~/.vimrc"
 
 unsetopt BG_NICE
