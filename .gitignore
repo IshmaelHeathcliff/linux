@@ -1,0 +1,6 @@
+*
+!.gitignore
+!.vimrc
+!.zshrc
+!/.vim/
+!/.oh-my-zsh/
