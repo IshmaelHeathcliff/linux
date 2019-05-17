@@ -2,5 +2,6 @@
 !.gitignore
 !.vimrc
 !.zshrc
+!.pythonrc
 !/.vim/
 !/.vim/**
