@@ -9,6 +9,9 @@ set term=xterm
 set t_Co=256
 colorscheme solarized
 
+"背景色
+set background=dark
+
 "启动时隐去援助提示
 set shortmess=atI
 
@@ -48,9 +51,6 @@ set incsearch
 "智能搜索
 set ignorecase
 set smartcase
-
-"背景色
-set background=dark
 
 "显示匹配
 set showmatch
