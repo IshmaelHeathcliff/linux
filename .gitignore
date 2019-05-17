@@ -1,5 +1,6 @@
-*
+**
 !.gitignore
 !.vimrc
 !.zshrc
-!/.vim/colors
+!/.vim/
+!/.vim/**
