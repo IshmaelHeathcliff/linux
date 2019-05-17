@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/ishmael'
+let g:netrw_dirhist_2='/home/ishmael/Dropbox/Coding/C#/num2char'
+let g:netrw_dirhist_3='/home/fdpc_1500010684/Notes/examples'
+let g:netrw_dirhist_4='/home/ishmael/.vim'
+let g:netrw_dirhist_5='/home/ishmael/.vim/plugin'
+let g:netrw_dirhist_6='/home/ishmael/.vim'
