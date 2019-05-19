@@ -5,10 +5,6 @@ set number
 "set guioption=
 
 "配色方案
-set term=xterm
-set t_Co=256
-colorscheme solarized
-
 if $COLORTERM == 'truecolor'
     set termguicolors
     colorscheme s
@@ -23,6 +19,9 @@ set background=dark
 
 "启动时隐去援助提示
 set shortmess=atI
+
+"
+filetype plugin on
 
 "语法高亮
 syntax on
@@ -124,7 +123,7 @@ let g:mapleader = "\<Space>"
 let g:maplocalleader = ',' 
 imap jj <Esc>
 nmap ; :
-nmap <leader>w :w<CR>
+nmap <leader>s :w<CR>
 nmap <leader>a :wq<CR>
 nmap <leader>q :q<CR>
 nmap <leader>` :shell<CR>
@@ -134,7 +133,7 @@ nmap - %
 nmap <leader>h ^
 nmap <leader>l $
 map <C-n> :NERDTreeToggle<CR>
-map <leader>t <C-w>w
+map <leader>w <C-w>
 
 "配置立即生效
 autocmd BufWritePost $MYVIMRC source $MYVIMRC
@@ -150,6 +149,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'powerline/powerline'
 Plug 'joker1007/vim-markdown-quote-syntax'
 Plug 'godlygeek/tabular'
+Plug 'lervag/vimtex'
 "Plug 'plasticboy/vim-markdown'
 call plug#end()
 
