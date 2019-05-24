@@ -156,6 +156,7 @@ Plug 'godlygeek/tabular'
 Plug 'lervag/vimtex'
 Plug 'plasticboy/vim-markdown'
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 "coc
@@ -168,9 +169,9 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 
 "ale
+let g:ale_linters_explicit = 1
 let g:ale_fixers = ['yapf']
 let g:ale_linters = {'python':['pyls']}
-let g:ale_linters_explicit = 1
 nmap <leader>f :ALEFix<CR>
 
 "airline
