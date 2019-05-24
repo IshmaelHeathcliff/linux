@@ -5,14 +5,18 @@ set number
 "set guioption=
 
 "配色方案
-if $COLORTERM == 'truecolor'
-    set termguicolors
-    colorscheme s
-else
-    set term=xterm
-    set t_Co=256
-    colorscheme solarized
-endif
+colorscheme slate
+set t_Co=256
+
+"solarized主题设置
+"if $COLORTERM == 'truecolor'
+"    set termguicolors
+"    colorscheme s
+"else
+"    set term=xterm
+"    set t_Co=256
+"    colorscheme solarized
+"endif
 
 "背景色
 set background=dark
@@ -126,7 +130,7 @@ nmap ; :
 nmap <leader>s :w<CR>
 nmap <leader>a :wq<CR>
 nmap <leader>q :q<CR>
-nmap <leader>` :shell<CR>
+nmap <leader>` :call term_start('zsh', {'term_finish' : 'close'})<CR>
 nmap j gj
 nmap k gk
 nmap - %
@@ -150,7 +154,8 @@ Plug 'powerline/powerline'
 Plug 'joker1007/vim-markdown-quote-syntax'
 Plug 'godlygeek/tabular'
 Plug 'lervag/vimtex'
-"Plug 'plasticboy/vim-markdown'
+Plug 'plasticboy/vim-markdown'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 "coc
@@ -158,10 +163,14 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
+"let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
+"let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
+
 
 "ale
-let g:ale_linters = {'python': ['pyls'], 'cs': ['mcs']}
-let g:ale_fixers = {'python': ['autopep8'], 'cs': ['mcs']}
+let g:ale_fixers = ['yapf']
+let g:ale_linters = {'python':['pyls']}
+let g:ale_linters_explicit = 1
 nmap <leader>f :ALEFix<CR>
 
 "airline
