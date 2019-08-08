@@ -170,7 +170,8 @@ autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 "ale
 let g:ale_linters_explicit = 1
-let g:ale_fixers = ['yapf']
+let g:ale_sign_column_always = 1
+let g:ale_fixers = {'python':['yapf']}
 let g:ale_linters = {'python':['pyls']}
 nmap <leader>f :ALEFix<CR>
 
