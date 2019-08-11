@@ -19,7 +19,7 @@ set t_Co=256
 "endif
 
 "背景色
-set background=dark
+set background=light
 
 "启动时隐去援助提示
 set shortmess=atI
@@ -74,8 +74,8 @@ set ruler
 set nocompatible
 
 "允许折叠
-set foldenable
-set foldmethod=marker
+set nofoldenable
+"set foldmethod=marker
 "execute pathogen#infect()
 "filetype plugin indent on
 """""""""""""""""设置折叠"""""""""""""""""""""
