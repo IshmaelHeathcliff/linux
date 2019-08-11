@@ -20,7 +20,7 @@ curl -sL install-node.now.sh/lts | sudo bash
 ```
 
 ## add netease repositories
-add texts below to /etc/apt/sources.list
+add texts below to /etc/apt/sources.list on 18.04LTS
 ```
 deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
 deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
