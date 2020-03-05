@@ -10,6 +10,10 @@ sudo apt upgrade
 
 ```
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+cp ~/.oh-my-zsh/themes/agnoster.zsh-theme ~/.oh-my-zsh/custom/themes/custom.zsh-theme
+vim ~/.oh-my-zsh/custom/themes/custom.zsh-theme
+去掉92行最后的@%m
 ```
 
 ## install vim plugs
