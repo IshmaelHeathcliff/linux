@@ -1,14 +1,21 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:$PATH
-export LD_LIBRARY_PATH=$HOME/lib:$LD_LIBRARY_PATH
+export PATH=$HOME/bin:$HOME/.local/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/.local/lib:$LD_LIBRARY_PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+
+export LC_CTYPE=zh_CN.UTF-8
+export LANG="zh_CN.UTF-8" 
+export LC_ALL="zh_CN.UTF-8" 
+
+export DISPLAY=localhost:0
+export PULSE_SERVER=tcp:127.0.0.1
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="avit"
+ZSH_THEME="custom"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -122,21 +129,22 @@ ex ()
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="cd ~/.oh-my-zsh"
 alias vimconfig="vim ~/.vimrc"
+alias psconfig="vim ~/.config/powerline-shell/config.json"
 
 # Powerline Shell
-function powerline_precmd() {
-    PS1="$(powerline-shell --shell zsh $?)"
-}
-
-function install_powerline_precmd() {
-    for s in "${precmd_functions[@]}"; do
-        if [ "$s" = "powerline_precmd" ]; then
-            return
-        fi
-    done
-    precmd_functions+=(powerline_precmd)
-}
-
-if [ "$TERM" != "linux" ]; then
-    install_powerline_precmd
-fi
+#function powerline_precmd() {
+#    PS1="$(powerline-shell --shell zsh $?)"
+#}
+#
+#function install_powerline_precmd() {
+#    for s in "${precmd_functions[@]}"; do
+#        if [ "$s" = "powerline_precmd" ]; then
+#            return
+#        fi
+#    done
+#    precmd_functions+=(powerline_precmd)
+#}
+#
+#if [ "$TERM" != "linux" ]; then
+#    install_powerline_precmd
+#fi
