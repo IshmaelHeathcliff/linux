@@ -145,7 +145,7 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC
 "插件配置
 "vim-plug
 call plug#begin('~/.vim/plugged')
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'w0rp/ale'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'vim-airline/vim-airline' 
@@ -155,7 +155,6 @@ Plug 'joker1007/vim-markdown-quote-syntax'
 Plug 'godlygeek/tabular'
 Plug 'lervag/vimtex'
 Plug 'plasticboy/vim-markdown'
-Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 call plug#end()
 
@@ -179,4 +178,4 @@ nmap <leader>f :ALEFix<CR>
 let g:airline_solarized_bg='light'
 let g:airline_theme='solarized'
 let g:airline#extensions#ale#enabled = 1
-let g:airline_powerline_fonts = 1
+"let g:airline_powerline_fonts = 1
