@@ -16,6 +16,14 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone https://github.com/paulirish/git-open.git $ZSH_CUSTOM/plugins/git-open
 ```
 
+## install latest git
+
+```
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt update
+sudo apt upgrade
+```
+
 ## install vim plugs
 
 ```

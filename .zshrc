@@ -11,9 +11,13 @@ export LD_LIBRARY_PATH=$HOME/.local/lib:$LD_LIBRARY_PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-export LC_CTYPE=zh_CN.UTF-8
-export LANG="zh_CN.UTF-8" 
-export LC_ALL="zh_CN.UTF-8" 
+# export LC_CTYPE=zh_CN.UTF-8
+# export LANG="zh_CN.UTF-8" 
+# export LC_ALL="zh_CN.UTF-8" 
+
+export LC_CTYPE=C
+export LANG=C
+export LC_ALL=C
 
 export DISPLAY=localhost:0
 export PULSE_SERVER=tcp:127.0.0.1
