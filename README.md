@@ -1,4 +1,4 @@
-## vim 8.1 on Ubuntu
+## vim 8.x on Ubuntu
 
 ```
 sudo add-apt-repository ppa:jonathonf/vim
