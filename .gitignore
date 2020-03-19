@@ -6,4 +6,7 @@
 !README.md
 !/.vim/
 !/.vim/**
+!/fonts
+!/fonts/**
 !.p10k.zsh
+!install.sh
