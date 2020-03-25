@@ -10,3 +10,4 @@
 !/fonts/**
 !.p10k.zsh
 !install.sh
+!.pip/pip.conf

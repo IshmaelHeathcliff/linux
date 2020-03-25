@@ -146,7 +146,6 @@ autocmd BufWritePost $MYVIMRC source $MYVIMRC
 "vim-plug
 call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'w0rp/ale'
 Plug 'preservim/nerdtree'
 Plug 'vim-airline/vim-airline' 
 Plug 'vim-airline/vim-airline-themes'
