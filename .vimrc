@@ -162,16 +162,16 @@ inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
-"let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
-"let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
+let g:airline_section_error = '%{airline#util#wrap(airline#extensions#coc#get_error(),0)}'
+let g:airline_section_warning = '%{airline#util#wrap(airline#extensions#coc#get_warning(),0)}'
 
 
 "ale
-let g:ale_linters_explicit = 1
-let g:ale_sign_column_always = 1
-let g:ale_fixers = {'python':['yapf']}
-let g:ale_linters = {'python':['pyls']}
-nmap <leader>f :ALEFix<CR>
+"let g:ale_linters_explicit = 1
+"let g:ale_sign_column_always = 1
+"let g:ale_fixers = {'python':['yapf']}
+"let g:ale_linters = {'python':['pyls']}
+"nmap <leader>f :ALEFix<CR>
 
 "airline
 let g:airline_solarized_bg='light'
